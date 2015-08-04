@@ -1,7 +1,6 @@
 exports.BattleScripts = {
 	init: function () {
 		//New Uber Moves
-		this.modData('Learnsets', 'masquerain').learnset.hurricane = ['5L100'];
 		this.modData('Learnsets', 'kyuremblack').learnset.boltstrike = ["6L0"];
 		this.modData('Learnsets', 'kyuremblack').learnset.iciclecrash = ["6L0"];
 		this.modData('Learnsets', 'kyuremwhite').learnset.blueflare = ["6L0"];
