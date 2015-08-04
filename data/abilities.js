@@ -38,8 +38,8 @@ Ratings and how they work:
 
 exports.BattleAbilities = {
 	"adaptability": {
-		desc: "This Pokemon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5.",
-		shortDesc: "This Pokemon's same-type attack bonus (STAB) is 2 instead of 1.5.",
+		desc: "This Pkemon's moves that match one of its types have a same-type attack bonus (STAB) of 2 instead of 1.5.",
+		shortDesc: "This Pkemon's same-type attack bonus (STAB) is 2 instead of 1.5.",
 		onModifyMove: function (move) {
 			move.stab = 2;
 		},
