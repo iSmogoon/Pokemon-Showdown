@@ -3313,4 +3313,5 @@ exports.BattleScripts = {
 		}
 		return pokemon;
 	}
+
 };
