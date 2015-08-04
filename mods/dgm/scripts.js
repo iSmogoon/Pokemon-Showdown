@@ -15,7 +15,7 @@ exports.BattleScripts = {
 		delete this.modData('Learnsets', 'genesect').learnset.rockpolish;
 		delete this.modData('Learnsets', 'genesect').learnset.thunder;
 		delete this.modData('Learnsets', 'greninja').learnset.lowkick;
-		delete this.modData('Learnsets', 'genesect').learnset.gunkshot;
+		delete this.modData('Learnsets', 'greninja').learnset.gunkshot;
 		delete this.modData('Learnsets', 'kangaskhan').learnset.seismictoss;
 		delete this.modData('Learnsets', 'kangaskhan').learnset.poweruppunch;
 		this.modData('Learnsets', 'rotomwash').learnset.whirlpool = ["6L0"];
