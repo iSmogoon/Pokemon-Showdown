@@ -108,6 +108,22 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: 122
 	},
+	"forewarn": {
+		desc: "On switch-in, this Pokemon is alerted to the foes' moveset.",
+		shortDesc: "The opponent's moveset is revealed.",
+		onStart: function(pokemon) {
+			var target = pokemon.side.foe.randomActive();
+			if (!target) return;
+			for (var j=0; j<target.moveset.length; j++) {
+				var move = this.getMove(target.moveset[j].move);
+				this.add('-message', target.name+' has '+move.name+'!');
+			}
+		},
+		id: "forewarn",
+		name: "Forewarn",
+		rating: 1,
+		num: 108
+	},
 	"grasspelt": {
 		shortDesc: "If Grassy Terrain is active, this Pokemon's Defense and Special Defense are multiplied by 1.5.",
 		onModifyDefPriority: 6,
