@@ -412,13 +412,10 @@ exports.BattlePokedex = {
 		baseStats:{hp:75,atk:110,def:65,spa:100,spd:60,spe:125},
 		abilities:{0:"Lightning Rod",1:"Motor Drive",H:"Reckless"}
 	},
-
 	weezing: {
 		inherit: true,
 		baseStats:{hp:70,atk:80,def:120,spa:95,spd:80,spe:55},
-		abilities:{0:"Lightning Rod",1:"Motor Drive",H:"Reckless"}
 	},
-
 	watchog: {
 		inherit: true,
 		abilities:{0:"Technician",1:"Filter",H:"Pickup"}

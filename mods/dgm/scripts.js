@@ -58,7 +58,7 @@ exports.BattleScripts = {
 
 		
 		//NU Tier New Learnsets
-		this.modData('Learnsets', 'arbok').learnset.dragonrsuh = ["6L0"];
+		this.modData('Learnsets', 'arbok').learnset.dragonrush = ["6L0"];
 		this.modData('Learnsets', 'arbok').learnset.dragondance = ["6L0"];
 		this.modData('Learnsets', 'arbok').learnset.dragonpulse = ["6L0"];
 		this.modData('Learnsets', 'arbok').learnset.dracometeor = ["6L0"];
