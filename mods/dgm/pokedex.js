@@ -545,4 +545,9 @@ exports.BattlePokedex = {
 	cofagrigus: {
 		inherit: true,
 	},
+	delphox: {
+		inherit: true,
+		baseStats:{hp:80,atk:59,def:70,spa:115,spd:104,spe:106},
+		abilities:{0:"Blaze",H:"Soundproof"},
+	},
 };
