@@ -480,7 +480,8 @@ exports.BattlePokedex = {
 		baseStats:{hp:86,atk:53,def:72,spa:112,spd:66,spe:106},
 		abilities:{0:"Competitive",1:"Unnerve",H:"Huge Power"}
 	},
-//Castform the Weather Queen
+//New Updates
+//Castform Forme changes handles in items.js
 	castformsunny: {
 		inherit: true,
 		abilities:{0:"Forecast",H:"Drought"},
@@ -501,4 +502,36 @@ exports.BattlePokedex = {
 		abilities:{0:"Forecast",H:"Cloud Nine"},
 		baseStats:{hp:80,atk:85,def:90,spa:85,spd:90,spe:80},
 	},
+//New Update (OU/BL Tier)
+
+	hawlucha: {
+		inherit: true,
+	},
+	heracross: {
+		inherit, true,
+	},
+	klefki: {
+		inherit: true,
+		abilities:{0:"Prankster",H:"Levitate"}
+	},
+	pinsir: {
+		inherit: true,
+	},
+	serperior: {
+		inherit: true,
+		types:["Grass","Dragon"]
+	},
+	staraptor: {
+		inherit: true,
+		baseStats:{hp:85,atk:120,def:80,spa:50,spd:70,spe:102}
+	},
+	ampharos: {
+		inherit: true,
+	},
+	goodra: {
+		inherit: true,
+		baseStats:{hp:95,atk:75,def:90,spa:120,spd:150,spe:70},
+		abilities:{0:"Regenerator",1:"Hydration",H:"Gooey"}
+	},
+	
 };
