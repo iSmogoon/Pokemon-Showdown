@@ -3475,8 +3475,5 @@ exports.BattleScripts = {
 		return pokemon;
 	}
 
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 1fd79704ba7782f28926aefc48d0d264b51efc02
+
