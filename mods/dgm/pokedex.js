@@ -508,7 +508,7 @@ exports.BattlePokedex = {
 		inherit: true,
 	},
 	heracross: {
-		inherit, true,
+		inherit: true,
 	},
 	klefki: {
 		inherit: true,
@@ -533,5 +533,16 @@ exports.BattlePokedex = {
 		baseStats:{hp:95,atk:75,def:90,spa:120,spd:150,spe:70},
 		abilities:{0:"Regenerator",1:"Hydration",H:"Gooey"}
 	},
-	
+	noivern: {
+		inherit: true,
+		baseStats:{hp:85,atk:77,def:80,spa:90,spd:80,spe:123},
+		abilities:{0:"Frisk",1:"Infiltrator",H:"Aerilate"},
+	},
+	yanmega: {
+		inherit: true,
+		types:["Bug","Dragon"],
+	},
+	cofagrigus: {
+		inherit: true,
+	},
 };
