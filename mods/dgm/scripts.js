@@ -169,6 +169,15 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'bellossom').learnset.leechseed = ["6L0"];
 		this.modData('Learnsets', 'hoopa').learnset.shadowsneak = ["6L0"];
 		
+		//Pokemon that got new abilities and had wish was crashing team validator. oops.
+		this.modData('Learnsets', 'minun').learnset.wish = ["6L0"];
+		this.modData('Learnsets', 'plusle').learnset.wish = ["6L0"];
+		this.modData('Learnsets', 'eevee').learnset.wish = ["6L0"];
+		this.modData('Learnsets', 'audino').learnset.wish = ["6L0"];
+		this.modData('Learnsets', 'lickilicky').learnset.wish = ["6L0"];
+		this.modData('Learnsets', 'delphox').learnset.wish = ["6L0"];
+		this.modData('Learnsets', 'wish').learnset.wish = ["6L0"];
+
 		//Universal Release Buttons
 		for (var i in this.data.FormatsData) {
 			this.modData('FormatsData', i).unreleasedHidden = false;
