@@ -7,12 +7,69 @@ exports.Formats = [
 	///////////////////////////////////////////////////////////////////
 
 	{
+		name: "DreGoonMod OU",
+		desc: ["&bullet; <a href=\"http://pastebin.com/iutaZuyA\">DreGoonMod</a>"],
+		section: "GoonServer Metas",
+		column: 2,
+		mod: 'dgm',
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
+		banlist: ['Uber', 'NFE']
+	},
+	{
+		name: "DreGoonMod Doubles",
+		desc: ["&bullet; <a href=\"http://pastebin.com/iutaZuyA\">DreGoonMod</a>"],
+		section: "GoonServer Metas",
+		column: 2,
+		mod: 'dgm',
+		gameType: 'doubles',
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
+		banlist: ['NFE', 'Ubers', 'Dark Void']
+	},
+	{
+		name: "DreGoonMod Ubers",
+		desc: ["&bullet; <a href=\"http://pastebin.com/iutaZuyA\">DreGoonMod</a>"],
+		section: "GoonServer Metas",
+		column: 2,
+		mod: 'dgm',
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
+		banlist: ['NFE']
+	},
+	{
+		name: "Middle Cup",
+		desc: ["&bullet; Middle Cup: Only Pokemon that have evolved once and can evolve again are allowed. Max level is 50."],
+		section: "GoonServer Metas",
+		column: 2,
+		mod: 'middlecup',
+		maxLevel: 50,
+		ruleset: ['Pokemon', 'Eviolite Clause', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
+		banlist: ['OU', 'UU', 'Ubers', 'RU', 'NU', 'PU', 'LC', 'Chansey + Eviolite']
+	},
+	{
+		name: "LC Inheritance",
+		desc: ["&bullet; LC Inheritance: All Pokemon get the abilities and moves of their evolutions."],
+		section: "GoonServer Metas",
+		column: 2,
+		maxLevel: 5,
+		ruleset: ['Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Cancel Mod', 'Little Cup'],
+		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger']
+		
+	},
+{
+   name: "Gods and Followers",
+   section: "GoonServer Metas",
+
+   mod: 'godsandfollowers',
+   ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Followers Clause', 'Mega Rayquaza Ban Mod', 'Cancel Mod'],
+   banlist: ['Illegal']
+},
+	{
 		name: "Random Battle",
 		section: "ORAS Singles",
 
 		team: 'random',
 		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
 	},
+
 	{
 		name: "Unrated Random Battle",
 		section: "ORAS Singles",
@@ -609,6 +666,20 @@ exports.Formats = [
 		ruleset: ['OU'],
 		banlist: ['Shadow Tag', 'Swift Swim', 'Chatter']
 	},
+	
+	{
+		name: "Tier Shift Randoms",
+		desc: [
+			"Pok&eacute;mon below OU/BL get all their stats boosted. UU/BL2 get +5, RU/BL3 get +10, and NU or lower get +15.",
+			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3532973/\">Tier Shift</a>",
+			"&bullet; <a href=\"https://www.smogon.com/forums/threads/3536719/\">Tier Shift Viability Ranking</a>"
+		],
+		section: "Other Metagames",
+		mod: 'tiershift',
+		team: 'random',
+		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
+	},
+	
 	{
 		name: "PU",
 		desc: [

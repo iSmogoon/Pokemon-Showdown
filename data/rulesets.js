@@ -519,6 +519,25 @@ exports.BattleFormats = {
 			this.add('rule', 'Swagger Clause: Swagger is banned');
 		}
 	},
+
+	evioliteclause: {
+		effectType: 'Banlist',
+		name: 'Eviolite Clause',
+		onStart: function () {
+			this.add('rule', 'Eviolite Clause: Limit one Pokemon with Eviolite.');
+		},
+		validateTeam: function (team, format) {
+			var EvioliteCount = 0;
+			for (var i = 0; i < team.length; i++) {
+				if (team[i].item.indexOf('Eviolite') >= 0) {
+					EvioliteCount++;
+				}
+				if (EvioliteCount > 1) {
+					return ["More than one of your Pokemon has an Eviolite, but you are limited to one Eviolite user by the Eviolite Clause."];
+				}
+			}
+		}
+	},
 	batonpassclause: {
 		effectType: 'Banlist',
 		name: 'Baton Pass Clause',
