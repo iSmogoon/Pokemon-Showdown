@@ -176,7 +176,7 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'audino').learnset.wish = ["6L0"];
 		this.modData('Learnsets', 'lickilicky').learnset.wish = ["6L0"];
 		this.modData('Learnsets', 'delphox').learnset.wish = ["6L0"];
-		this.modData('Learnsets', 'wish').learnset.wish = ["6L0"];
+		this.modData('Learnsets', 'carbink').learnset.wish = ["6L0"];
 
 		//Universal Release Buttons
 		for (var i in this.data.FormatsData) {

@@ -16,25 +16,6 @@ exports.Formats = [
 		banlist: ['Uber', 'NFE']
 	},
 	{
-		name: "DreGoonMod Doubles",
-		desc: ["&bullet; <a href=\"http://pastebin.com/iutaZuyA\">DreGoonMod</a>"],
-		section: "GoonServer Metas",
-		column: 2,
-		mod: 'dgm',
-		gameType: 'doubles',
-		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
-		banlist: ['NFE', 'Ubers', 'Dark Void']
-	},
-	{
-		name: "DreGoonMod Ubers",
-		desc: ["&bullet; <a href=\"http://pastebin.com/iutaZuyA\">DreGoonMod</a>"],
-		section: "GoonServer Metas",
-		column: 2,
-		mod: 'dgm',
-		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
-		banlist: ['NFE']
-	},
-	{
 		name: "Middle Cup",
 		desc: ["&bullet; Middle Cup: Only Pokemon that have evolved once and can evolve again are allowed. Max level is 50."],
 		section: "GoonServer Metas",
