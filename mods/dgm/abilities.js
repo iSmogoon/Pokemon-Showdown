@@ -41,14 +41,6 @@ exports.BattleAbilities = {
 			}
 		},
 	},
-/*
-			var type = move.type;
-			if (type && type !== '???' && source.getTypes().join() !== type) {
-				if (!source.setType(type)) return;
-				this.add('-start', source, 'typechange', type, '[from] Protean');
-			}
-*/
-
 	"defeatist": {
 		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
 		shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",

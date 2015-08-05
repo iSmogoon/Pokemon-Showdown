@@ -19,6 +19,7 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Dark"
 	},
+	//take this out, change was reverted
 	"dizzypunch": {
 		inherit: true,
 		basePower: 65,
@@ -49,11 +50,13 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Fire"
 	},
+	//80bp in new update
 	"irontail": {
 		inherit: true,
 		basePower: 100,
 		accuracy: 90,
 	},
+	//reverted
 "kingsshield": {
 		num: 588,
 		accuracy: true,
@@ -169,13 +172,8 @@ exports.BattleMovedex = {
 		onEffectiveness: function (typeMod, type, move) {
 			return typeMod + this.getEffectiveness('Ground', type);
 		},
-		self: {
-			onHit: function (pokemon) {
-				this.add('-anim', pokemon, "Geomancy", pokemon);
-			}
-		},
-		onTry: function (pokemon) {
-				this.add('-anim', pokemon, "Earth Power", pokemon);
+		onPrepareHit: function (pokemon) {
+			this.add('-anim', pokemon, "Geomancy", pokemon)
 		},
 		flags: {protect: 1, mirror: 1, nonsky: 1},
 		secondary: false,
@@ -339,6 +337,7 @@ exports.BattleMovedex = {
 		basePower: 25,
 		accuracy: 95,
 	},
+	//take this out, change was reverted
 	"twister": {
 		num: 239,
 		accuracy: 10,
@@ -378,4 +377,41 @@ exports.BattleMovedex = {
 		inherit: true,
 		isUnreleased: false,
 	},
+/*
+Update v1.6.0
+	"grassyterrain": {
+		inherit: true,
+		priority: 1,
+	},
+	"mistyterrain": {
+		inherit: true,
+		priority: 1,
+	},
+	"electricterrain": {
+		inherit: true,
+		priority: 1,
+	},
+	"lockon": {
+		num: 461,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Raises the user's Special Attack and Accuracy by 1 stage.",
+		shortDesc: "Raises the user's Special Attack and Speed by 1.",
+		id: "lunardance",
+		isViable: true,
+		name: "Lock-On",
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		boosts: {
+			spa: 1,
+			acc: 1
+		},
+		secondary: false,
+		target: "self",
+		type: "Psychic"
+	},
+	
+*/
 };
