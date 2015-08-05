@@ -348,6 +348,23 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 16
 	},
+	"colorchange": {
+		desc: "This Pokemon's secondary typing changes to match that of its first move.",
+		shortDesc: "Changes the user's secondary typing to match thats of its first move."
+		onStart: function (pokemon) {
+			var move = this.getMove(pokemon.moveset[0].move);
+			var pTypes = pokemon.types;
+			if (pokemon.types[0] != move.type) {
+				pokemon.types[1] = move.type;
+				this.add('-start', pokemon, 'typechange', pTypes.join('/'));
+				this.add('-message', pokemon.name+' changed its color to '+pokemon.types+'!');
+				pokemon.typesData = [
+                                {type: pTypes[0], suppressed: false, isAdded: false},
+                                {type: pTypes[1], suppressed: false, isAdded: false}
+                        ];
+			}
+		},
+	},
 	"competitive": {
 		desc: "This Pokemon's Special Attack is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon.",
 		shortDesc: "This Pokemon's Sp. Atk is raised by 2 for each of its stats that is lowered by a foe.",

@@ -26,20 +26,29 @@ exports.BattleAbilities = {
 		}
 	},
 	"colorchange": {
-		desc: "This Pokemon's secondary type changes according to it's most powerful attack.",
-		shortDesc: "This Pokemon's secondary type changes according to it's most powerful attack.",
-		onStart: function(pokemon) {
+		desc: "This Pokemon's secondary typing changes to match that of its first move.",
+		shortDesc: "Changes the user's secondary typing to match thats of its first move.",
+		onStart: function (pokemon) {
 			var move = this.getMove(pokemon.moveset[0].move);
+			var pTypes = pokemon.types;
 			if (pokemon.types[0] != move.type) {
 				pokemon.types[1] = move.type;
-				this.add('-message', pokemon.name+' changed its color to '+pokemon.types+'!');
+				this.add('-start', pokemon, 'typechange', pTypes.join('/'));
+				pokemon.typesData = [
+                                {type: pTypes[0], suppressed: false, isAdded: false},
+                                {type: pTypes[1], suppressed: false, isAdded: false}
+                        ];
 			}
 		},
-		id: "colorchange",
-		name: "Color Change",
-		rating: 4,
-		num: 16
 	},
+/*
+			var type = move.type;
+			if (type && type !== '???' && source.getTypes().join() !== type) {
+				if (!source.setType(type)) return;
+				this.add('-start', source, 'typechange', type, '[from] Protean');
+			}
+*/
+
 	"defeatist": {
 		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
 		shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
