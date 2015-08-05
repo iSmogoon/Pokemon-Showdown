@@ -30,6 +30,18 @@ exports.BattleItems = {
 				return spd * 1.5;
 			}
 		},
+		onModifyDefPriority: 2,
+		onModifyDef: function (def, pokemon) {
+			if (pokemon.template.species === 'Carbink') {
+				return def * 1.5;
+			}
+		},
+		onModifySpDPriority: 2,
+		onModifySpD: function (spd, pokemon) {
+			if (pokemon.template.species === 'Carbink') {
+				return spd * 1.5;
+			}
+		},
 		onSwitchInPriority: -6,
 		onSwitchIn: function (pokemon) {
 			if (pokemon.isActive && pokemon.baseTemplate.species === 'Meloetta') {

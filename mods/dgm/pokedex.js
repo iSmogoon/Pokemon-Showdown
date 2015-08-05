@@ -9,31 +9,44 @@ exports.BattlePokedex = {
 	},
 	aegislash: {
 		inherit: true,
-		baseStats:{hp:65,atk:50,def:135,spa:50,spd:135,spe:50},
+		baseStats:{hp:65,atk:60,def:140,spa:60,spd:140,spe:50},
 		abilities:{0:"Stance Change",H:"Heavy Metal"}
 	},
 	aegislashblade: {
 		inherit: true,
-		baseStats:{hp:65,atk:135,def:50,spa:135,spd:50,spe:50},
+		baseStats:{hp:65,atk:140,def:60,spa:140,spd:60,spe:50},
 		abilities:{0:"Stance Change",H:"Heavy Metal"}
 	},
 	alakazammega: {
 		inherit: true,
 		baseStats:{hp:55,atk:50,def:75,spa:175,spd:95,spe:150},
 	},
+	altaria: {
+		inherit: true,
+		baseStats:{hp:80,atk:70,def:90,spa:70,spd:105,spe:80}
+	},
+	altariamega: {
+		inherit: true,
+		baseStats:{hp:80,atk:110,def:110,spa:110,spd:105,spe:80}
+	},
 	blaziken: {
 		inherit: true,
-		baseStats:{hp:80,atk:115,def:75,spa:110,spd:75,spe:75},
-		abilities:{0:"Blaze",H:"Limber"}
+		abilities:{0:"Blaze",H:"Flash Fire"}
 	},
 	blazikenmega: {
 		inherit: true,
-		baseStats:{hp:80,atk:145,def:95,spa:130,spd:85,spe:95},
-		abilities:{0:"Limber"}
+		abilities:{0:"Flash Fire"}
+	},
+	charizardmegax: {
+		inherit: true,
+		baseStats:{hp:78,atk:135,def:111,spa:120,spd:90,spe:100},
 	},
 	darkrai: {
 		inherit: true,
-		baseStats:{hp:70,atk:105,def:90,spa:135,spd:90,spe:115}
+		baseStats:{hp:70,atk:100,def:90,spa:135,spd:90,spe:115}
+	},
+	diancie: {
+		inherit: true,
 	},
 	genesectburn: {
 		inherit: true,
@@ -53,11 +66,30 @@ exports.BattlePokedex = {
 	},
 	gengarmega: {
 		inherit: true,
-		abilities:{0:"Frisk"},
+		abilities:{0:"Forewarn"},
+	},
+	greninja: {
+		inherit: true,
+	},
+	hawlucha: {
+		inherit: true,
+	},
+	heracross: {
+		inherit: true,
+		baseStats:{hp:80,atk:125,def:75,spa:40,spd:95,spe:90},
+	},
+	heracrossmega: {
+		inherit: true,
+		baseStats:{hp:80,atk:185,def:115,spa:40,spd:105,spe:80}
+	},
+	klefki: {
+		inherit: true,
+		abilities:{0:"Prankster",H:"Levitate"}
 	},
 	hoopa: {
 		inherit: true,
 		abilities:{0:"Prankster"},
+		baseStats:{hp:80,atk:110,def:80,spa:140,spd:120,spe:70}
 	},
 	hippowdon: {
 		inherit: true,
@@ -65,11 +97,10 @@ exports.BattlePokedex = {
 	},
 	kangaskhan: {
 		inherit: true,
-		baseStats:{hp:95,atk:85,def:70,spa:40,spd:90,spe:90}
 	},
 	kangaskhanmega: {
 		inherit: true,
-		baseStats:{hp:95,atk:125,def:90,spa:60,spd:90,spe:100}
+		baseStats:{hp:105,atk:130,def:95,spa:65,spd:95,spe:100}
 	},
 	landorus: {
 		inherit: true,
@@ -115,14 +146,31 @@ exports.BattlePokedex = {
 		abilities:{0:"Gale Wings"},
 		baseStats:{hp:95,atk:145,def:120,spa:120,spd:100,spe:120}
 	},
+	serperior: {
+		inherit: true,
+		types:["Grass","Dragon"]
+	},
 	shayminsky: {
 		inherit: true,
 		abilities:{0:"Natural Cure"},
 		baseStats:{hp:100,atk:113,def:75,spa:120,spd:75,spe:117}
 	},
+	staraptor: {
+		inherit: true,
+		baseStats:{hp:85,atk:120,def:80,spa:50,spd:70,spe:102}
+	},
+	sylveon: {
+		inherit: true,
+	},
 	talonflame: {
 		inherit: true,
 		baseStats:{hp:75,atk:81,def:68,spa:74,spd:66,spe:126}
+	},
+	tornadustherian: {
+		inherit: true,
+	},
+	tyranitar: {
+		inherit: true,
 	},
 	volcanion: {
 		inherit: true,
@@ -134,7 +182,7 @@ exports.BattlePokedex = {
 	},
 	abomasnowmega: {
 		inherit: true,
-		baseStats:{hp:100,atk:135,def:80,spa:135,spd:90,spe:100}
+		baseStats:{hp:100,atk:125,def:90,spa:125,spd:100,spe:100}
 	},
 	aerodactyl: {
 		inherit: true,
@@ -143,6 +191,15 @@ exports.BattlePokedex = {
 	aerodactylmega: {
 		inherit: true,
 		baseStats:{hp:80,atk:135,def:90,spa:70,spd:100,spe:150}
+	},
+	azelf: {
+		inherit: true,
+		abilities:{0:"Defiant"}
+	},
+	goodra: {
+		inherit: true,
+		baseStats:{hp:95,atk:75,def:90,spa:120,spd:150,spe:70},
+		abilities:{0:"Regenerator",1:"Hydration",H:"Gooey"}
 	},
 	houndoom: {
 		inherit: true,
@@ -153,6 +210,11 @@ exports.BattlePokedex = {
 		inherit: true,
 		baseStats:{hp:75,atk:110,def:100,spa:140,spd:80,spe:115},
 		abilities:{0:"Moxie"}
+	},
+	noivern: {
+		inherit: true,
+		baseStats:{hp:85,atk:77,def:80,spa:90,spd:80,spe:123},
+		abilities:{0:"Frisk",1:"Infiltrator",H:"Aerilate"}
 	},
 	rotomheat: {
 		inherit: true,
@@ -165,15 +227,27 @@ exports.BattlePokedex = {
 	},
 	umbreon: {
 		inherit: true,
-		abilities:{0:"Synchronize",H:"Frisk"}
+		abilities:{0:"Synchronize",H:"Wonder Skin"}
 	},
 	vaporeon: {
 		inherit: true,
-		abilities:{0:"Water Absorb",H:"Oblivious"}
+		abilities:{0:"Water Absorb",H:"Hydration"}
+	},
+	yanmega: {
+		inherit: true,
+		types:["Bug","Dragon"],
 	},
 	zoroark: {
 		inherit: true,
 		baseStats:{hp:70,atk:110,def:65,spa:120,spd:70,spe:115},
+	},
+	banette: {
+		inherit: true,
+		baseStats:{hp:64,atk:115,def:70,spa:83,spd:73,spe:65}
+	},
+	banettemega: {
+		inherit: true,
+		baseStats:{hp:64,atk:165,def:80,spa:88,spd:93,spe:75},
 	},
 	braviary: {
 		inherit: true,
@@ -190,9 +264,16 @@ exports.BattlePokedex = {
 		baseStats:{hp:70,atk:110,def:90,spa:145,spd:95,spe:70},
 		abilities:{0:"Sheer Force"}	
 	},
+	cofagrigus: {
+		inherit: true,
+	},
+	delphox: {
+		inherit: true,
+		baseStats:{hp:80,atk:59,def:70,spa:115,spd:104,spe:106},
+		abilities:{0:"Sheer Force"}	
+	},
 	druddigon: {
 		inherit: true,
-		types:["Dragon","Rock"],
 		baseStats:{hp:82,atk:120,def:99,spa:40,spd:90,spe:48}
 	},
 	glalie: {
@@ -280,7 +361,7 @@ exports.BattlePokedex = {
 	},
 	beheeyem: {
 		inherit: true,
-		types:["Psychic","Rock"],
+		baseStats:{hp:90,atk:65,def:80,spa:125,spd:95,spe:40},
 		abilities:{0:"Levitate",1:"Synchronize",H:"Analytic"}
 	},
 	bellossom: {
@@ -288,13 +369,24 @@ exports.BattlePokedex = {
 		baseStats:{hp:80,atk:75,def:95,spa:100,spd:110,spe:50},
 		abilities:{0:"Chlorophyll",H:"Leaf Guard"}
 	},
+	carbink: {
+		inherit: true,
+		abilities:{0:"Magic Bounce",1:"Persistent",H:"Sturdy"}
+	},
 	carracosta: {
 		inherit: true,
 		baseStats:{hp:74,atk:108,def:127,spa:78,spd:65,spe:42},
 	},
+	cherrim: {
+		inherit: true,
+		baseStats:{hp:80,atk:91,def:82,spa:101,spd:91,spe:98},
+		abilities:{0:"Flower Gift",H:"Leaf Guard"}
+	},
 	cherrimsunshine: {
 		inherit: true,
-		types:["Grass","Fire"]
+		types:["Grass","Fire"],
+		baseStats:{hp:80,atk:91,def:82,spa:101,spd:91,spe:98},
+		abilities:{0:"Flower Gift",H:"Leaf Guard"}
 	},
 	cryogonal: {
 		inherit: true,
@@ -322,6 +414,7 @@ exports.BattlePokedex = {
 	},
 	gigalith: {
 		inherit: true,
+		baseStats:{hp:85,atk:135,def:130,spa:60,spd:90,spe:25},
 		abilities:{0:"Sturdy",H:"Solid Rock"}
 	},
 	glaceon: {
@@ -347,11 +440,12 @@ exports.BattlePokedex = {
 	},
 	leafeon: {
 		inherit: true,
+		baseStats:{hp:65,atk:110,def:95,spa:60,spd:65,spe:130},
 		abilities:{0:"Natural Cure",H:"Chlorophyll"}
 	},
 	leavanny: {
 		inherit: true,
-		baseStats:{hp:80,atk:105,def:80,spa:70,spd:83,spe:95},
+		baseStats:{hp:80,atk:110,def:80,spa:70,spd:83,spe:100},
 		abilities:{0:"Technician",1:"Leaf Guard",H:"Overcoat"}
 	},
 	lickilicky: {
@@ -359,6 +453,12 @@ exports.BattlePokedex = {
 		baseStats:{hp:110,atk:85,def:95,spa:80,spd:110,spe:50},
 		abilities:{0:"Thick Fat",1:"Unaware",H:"Cloud Nine"}
 	},
+	liepard: {
+		inherit: true,
+		baseStats:{hp:64,atk:88,def:60,spa:88,spd:60,spe:108},
+		abilities:{0:"Wonder Skin",1:"Unburden",H:"Prankster"}
+	},
+	
 	magmortar: {
 		inherit: true,
 		baseStats:{hp:75,atk:95,def:70,spa:125,spd:95,spe:88},
@@ -367,6 +467,18 @@ exports.BattlePokedex = {
 	marowak: {
 		inherit: true,
 		baseStats:{hp:60,atk:90,def:110,spa:50,spd:80,spe:45},
+	},
+	meowstic: {
+		inherit: true,
+		baseStats:{hp:77,atk:45,def:82,spa:93,spd:91,spe:104}
+	},
+	meowsticf: {
+		inherit: true,
+		baseStats:{hp:77,atk:45,def:82,spa:93,spd:91,spe:104}
+	},
+	mesprit: {
+		inherit: true,
+		abilities:{0:"Synchronize"}
 	},
 	minun: {
 		inherit: true,
@@ -395,8 +507,8 @@ exports.BattlePokedex = {
 	},
 	parasect: {
 		inherit: true,
-		baseStats:{hp:95,atk:90,def:100,spa:40,spd:85,spe:25},
-		abilities:{0:"Poison Heal",1:"Dry Skin",H:"Effect Spore"}
+		baseStats:{hp:95,atk:105,def:115,spa:35,spd:90,spe:25},
+		abilities:{0:"Poison Heal",1:"Dry Skin",H:"Harvest"}
 	},
 	politoed: {
 		inherit: true,
@@ -418,7 +530,8 @@ exports.BattlePokedex = {
 	},
 	watchog: {
 		inherit: true,
-		abilities:{0:"Technician",1:"Filter",H:"Pickup"}
+		baseStats:{hp:60,atk:78,def:70,spa:85,spd:70,spe:115},
+		abilities:{0:"Cheek Pouch",1:"Filter",H:"Pickup"}
 	},
 
 	walrein: {
@@ -433,7 +546,8 @@ exports.BattlePokedex = {
 
 	vespiquen: {
 		inherit: true,
-		abilities:{0:"Pressure",H:"Parental Bond"}
+		baseStats:{hp:80,atk:90,def:102,spa:90,spd:102,spe:60},
+		abilities:{0:"Pressure",H:"Wonder Skin"}
 	},
 
 	vanilluxe: {
@@ -477,6 +591,10 @@ exports.BattlePokedex = {
 		baseStats:{hp:86,atk:53,def:72,spa:112,spd:66,spe:106},
 		abilities:{0:"Competitive",1:"Unnerve",H:"Huge Power"}
 	},
+	uxie: {
+		inherit: true,
+		abilities:{0:"magicbounce"}
+	},
 //New Updates
 //Castform Forme changes handles in items.js
 	castformsunny: {
@@ -498,53 +616,5 @@ exports.BattlePokedex = {
 		inherit: true,
 		abilities:{0:"Forecast",H:"Cloud Nine"},
 		baseStats:{hp:80,atk:85,def:90,spa:85,spd:90,spe:80},
-	},
-//New Update (OU/BL Tier)
-
-	hawlucha: {
-		inherit: true,
-	},
-	heracross: {
-		inherit: true,
-	},
-	klefki: {
-		inherit: true,
-		abilities:{0:"Prankster",H:"Levitate"}
-	},
-	pinsir: {
-		inherit: true,
-	},
-	serperior: {
-		inherit: true,
-		types:["Grass","Dragon"]
-	},
-	staraptor: {
-		inherit: true,
-		baseStats:{hp:85,atk:120,def:80,spa:50,spd:70,spe:102}
-	},
-	ampharos: {
-		inherit: true,
-	},
-	goodra: {
-		inherit: true,
-		baseStats:{hp:95,atk:75,def:90,spa:120,spd:150,spe:70},
-		abilities:{0:"Regenerator",1:"Hydration",H:"Gooey"}
-	},
-	noivern: {
-		inherit: true,
-		baseStats:{hp:85,atk:77,def:80,spa:90,spd:80,spe:123},
-		abilities:{0:"Frisk",1:"Infiltrator",H:"Aerilate"},
-	},
-	yanmega: {
-		inherit: true,
-		types:["Bug","Dragon"],
-	},
-	cofagrigus: {
-		inherit: true,
-	},
-	delphox: {
-		inherit: true,
-		baseStats:{hp:80,atk:59,def:70,spa:115,spd:104,spe:106},
-		abilities:{0:"Blaze",H:"Soundproof"},
 	},
 };

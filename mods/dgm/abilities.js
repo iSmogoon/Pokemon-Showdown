@@ -138,7 +138,7 @@ exports.BattleAbilities = {
 		num: 108
 	},
 	"grasspelt": {
-		desc: "If Grassy Terrain is active, this Pokemon's Defense and Special Defense are multiplied by 1.5."
+		desc: "If Grassy Terrain is active, this Pokemon's Defense and Special Defense are multiplied by 1.5.",
 		shortDesc: "Grants x1.5 defense and x1.5 special defense in Grassy Terrain.",
 		onModifyDefPriority: 6,
 		onModifyDef: function (pokemon) {
@@ -314,6 +314,22 @@ exports.BattleAbilities = {
 		num: -5
 	},
 	*/
+	"wonderskin": {
+		desc: "This Pokemon cannot be put to sleep, burned, poisoned, or paralyzed; this includes both opponent-induced statuses as well as user-induced statuses.",
+		shortDesc: "This Pokemon cannot be statused. Gaining this Ability while inflicted cures it.",
+		onUpdate: function(pokemon) {
+			if (pokemon.status === 'slp' || pokemon.status === 'brn' || pokemon.status === 'psn' || pokemon.status === 'tox' || pokemon.status === 'par') {
+				pokemon.cureStatus();
+			}
+		},
+		onImmunity: function(type, pokemon) {
+			if (type === 'slp' || type === 'brn' || type === 'psn' || type === 'tox' || type === 'par') return false;
+		},
+		id: "wonderskin",
+		name: "Wonder Skin",
+		rating: 1,
+		num: 147
+	},
 	"persistent": {
 		inherit: true,
 		isNonStandard: false,

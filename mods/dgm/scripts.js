@@ -7,7 +7,7 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'kyuremwhite').learnset.iciclecrash = ["6L0"];
 		this.modData('Learnsets', 'xerneas').learnset.lightofruin = ["6L0"];
 		
-		//OU Tier New Learnsets
+		//OU/BL Tier New Learnsets
 		delete this.modData('Learnsets', 'aegislash').learnset.sacredsword;
 		delete this.modData('Learnsets', 'darkrai').learnset.sludgebomb;
 		this.modData('Learnsets', 'diancie').learnset.playrough = ["6L0"];
@@ -19,8 +19,21 @@ exports.BattleScripts = {
 		delete this.modData('Learnsets', 'kangaskhan').learnset.seismictoss;
 		delete this.modData('Learnsets', 'kangaskhan').learnset.poweruppunch;
 		this.modData('Learnsets', 'rotomwash').learnset.whirlpool = ["6L0"];
+		this.modData('Learnsets', 'hawlucha').learnset.meditate = ["6L0"];
+		this.modData('Learnsets', 'hawlucha').learnset.megapunch = ["6L0"];
+		this.modData('Learnsets', 'hawlucha').learnset.earthquake = ["6L0"];
+		this.modData('Learnsets', 'heracross').learnset.heatcrash = ["6L0"];
+		this.modData('Learnsets', 'klefki').learnset.drainingkiss = ["6L0"];
+		this.modData('Learnsets', 'pinsir').learnset.fellstinger = ["6L0"];
+		this.modData('Learnsets', 'serperior').learnset.dracometeor = ["6L0"];
+		this.modData('Learnsets', 'serperior').learnset.dragonbreath = ["6L0"];
+		this.modData('Learnsets', 'serperior').learnset.dragonrush = ["6L0"];
+		
 		
 		//UU Tier New Learnsets
+		
+		this.modData('Learnsets', 'ampharos').learnset.paraboliccharge = ["6L0"];
+		this.modData('Learnsets', 'ampharos').learnset.dracometeor = ["6L0"];
 		this.modData('Learnsets', 'blissey').learnset.wish = ["6L0"];
 		this.modData('Learnsets', 'darmanitan').learnset.calmmind = ["6L0"];
 		this.modData('Learnsets', 'espeon').learnset.aurasphere = ["6L0"];
@@ -30,13 +43,19 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'slurpuff').learnset.slackoff = ["6S666"];
 		this.modData('Learnsets', 'umbreon').learnset.switcheroo = ["6L0"];
 		this.modData('Learnsets', 'vaporeon').learnset.recover = ["6L0"];
+		this.modData('Learnsets', 'yanmega').learnset.dracometeor = ["6L0"];
+		this.modData('Learnsets', 'yanmega').learnset.dragonpulse = ["6L0"];
+		this.modData('Learnsets', 'yanmega').learnset.dragonrush = ["6L0"];
+		this.modData('Learnsets', 'yanmega').learnset.dragonbreath = ["6L0"];
 		this.modData('Learnsets', 'zoroark').learnset.fireblast = ["6L0"];
-		this.modData('Learnsets', 'zoroark').learnset.sludgebomb = ["6L0"];
 		
 		//RU Tier New Learnsets
 		this.modData('Learnsets', 'braviary').learnset.skyuppercut = ["6L0"];
 		this.modData('Learnsets', 'camerupt').learnset.slackoff = ["6L0"];
 		this.modData('Learnsets', 'camerupt').learnset.powergem = ["6L0"];
+		this.modData('Learnsets', 'delphox').learnset.healbell = ["6L0"];
+		this.modData('Learnsets', 'delphox').learnset.focusblast = ["6L0"];
+		this.modData('Learnsets', 'delphox').learnset.gigadrain = ["6L0"];
 		this.modData('Learnsets', 'druddigon').learnset.stoneedge = ["6L0"];
 		this.modData('Learnsets', 'glalie').learnset.earthpower = ["6L0"];
 		this.modData('Learnsets', 'glalie').learnset.hypervoice = ["6L0"];
@@ -84,6 +103,11 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'bellossom').learnset.weatherball = ["6L0"];
 
 		this.modData('Learnsets', 'carracosta').learnset.rapidspin = ["6L0"];
+		
+		this.modData('Learnsets', 'carbink').learnset.magicroom = ["6L0"];
+		this.modData('Learnsets', 'carbink').learnset.healblock = ["6L0"];
+		
+		this.modData('Learnsets', 'castform').learnset.recover = ["6L0"];
 
 		this.modData('Learnsets', 'cherrim').learnset.flamethrower = ["6L0"];
 		this.modData('Learnsets', 'cherrim').learnset.fireblast = ["6L0"];
@@ -108,10 +132,24 @@ exports.BattleScripts = {
 
 		this.modData('Learnsets', 'lilligant').learnset.psychic = ["6L0"];
 		this.modData('Learnsets', 'lilligant').learnset.earthpower = ["6L0"];
+		
+		this.modData('Learnsets', 'liepard').learnset.partingshot = ["6L0"];
+		this.modData('Learnsets', 'liepard').learnset.quash = ["6L0"];
+		
 
 		this.modData('Learnsets', 'magmortar').learnset.darkpulse = ["6L0"];
 		this.modData('Learnsets', 'magmortar').learnset.aurasphere = ["6L0"];
+		
+		this.modData('Learnsets', 'meowstic').learnset.taunt = ["6L0"];
+		this.modData('Learnsets', 'meowstic').learnset.encore = ["6L0"];
+		this.modData('Learnsets', 'meowstic').learnset.destinybond = ["6L0"];
+		this.modData('Learnsets', 'meowstic').learnset.cosmicpower = ["6L0"];
 
+		this.modData('Learnsets', 'meowsticf').learnset.nastyplot = ["6L0"];
+		this.modData('Learnsets', 'meowsticf').learnset.aurasphere = ["6L0"];
+		this.modData('Learnsets', 'meowsticf').learnset.icebeam = ["6L0"];
+		this.modData('Learnsets', 'meowsticf').learnset.hypervoice = ["6L0"];
+		
 		this.modData('Learnsets', 'minun').learnset.disable = ["6L0"];
 		this.modData('Learnsets', 'minun').learnset.electricterrain = ["6L0"];
 		this.modData('Learnsets', 'minun').learnset.followme = ["6L0"];
@@ -150,6 +188,8 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'rotomfan').learnset.hurricane = ["6L0"];
 
 		this.modData('Learnsets', 'spinda').learnset.topsyturvy = ["6L0"];
+		
+		this.modData('Learnsets', 'swellow').learnset.skyuppercut = ["6L0"];
 
 		this.modData('Learnsets', 'throh').learnset.meditate = ["6L0"];
 		this.modData('Learnsets', 'throh').learnset.slackoff = ["6L0"];
@@ -158,8 +198,8 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'vanilluxe').learnset.chargebeam = ["6L0"];
 		this.modData('Learnsets', 'vanilluxe').learnset.recover = ["6L0"];
 
-		this.modData('Learnsets', 'watchog').learnset.suckerpunch = ["6L0"];
-		this.modData('Learnsets', 'watchog').learnset.nightslash = ["6L0"];
+		this.modData('Learnsets', 'watchog').learnset.tailglow = ["6L0"];
+		this.modData('Learnsets', 'watchog').learnset.hypervoice = ["6L0"];
 
 		this.modData('Learnsets', 'weezing').learnset.recover = ["6L0"];
 

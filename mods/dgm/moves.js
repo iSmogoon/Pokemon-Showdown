@@ -1,4 +1,8 @@
 exports.BattleMovedex = {
+	"armthrust": {
+		inherit: true,
+		basePower: 20,
+	},
 	"darkvoid": {
 		inherit: true,
 	},
@@ -13,6 +17,11 @@ exports.BattleMovedex = {
 			chance: 50,
 			volatileStatus: 'confusion'
 		}
+	},
+	"fellstinger": {
+		inherit: true,
+		basePower: 65,
+		accuracy: 65,
 	},
 	"flameburst": {
 		num: 481,
