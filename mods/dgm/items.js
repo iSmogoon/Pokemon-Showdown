@@ -29,6 +29,23 @@ exports.BattleItems = {
 			if (pokemon.template.species === 'Shuckle') {
 				return spd * 1.5;
 			}
+		onSwitchInPriority: -6,
+		onSwitchIn: function (pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Meloetta') {
+				var template = this.getTemplate('Meloetta-Pirouette');
+				pokemon.formeChange(template);
+				pokemon.baseTemplate = template;
+				pokemon.details = template.species + (pokemon.level === 100 ? '' : ', L' + pokemon.level) + (pokemon.gender === '' ? '' : ', ' + pokemon.gender) + (pokemon.set.shiny ? ', shiny' : '');
+				this.add('detailschange', pokemon, pokemon.details);
+				this.add('message', pokemon.name + " transformed!");
+				pokemon.setAbility(template.abilities['0']);
+				pokemon.baseAbility = pokemon.ability;
+			}
+		},
+		onTakeItem: function (item, source) {
+			if (source.baseTemplate.baseSpecies === 'Castform') return false;
+			return true;
+		}
 		},
 
 		num: 225,
