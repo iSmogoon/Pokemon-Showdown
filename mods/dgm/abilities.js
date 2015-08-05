@@ -1,7 +1,7 @@
 exports.BattleAbilities = {
 	"battlearmor": {
 		desc: "Not very effective hits do 33% less damage to this pokemon.",
-		shortDesc: "Resisted hits do 33% less damage to this pokemon.",
+		shortDesc: "Resisted hits do 33% less damage to this Pokemon.",
 		onSourceBasePower: function(basePower, attacker, defender, move) {
 			if (this.getEffectiveness(move.type, defender) < 0) {
 				this.debug('Battle Armor Weaken');
@@ -14,20 +14,24 @@ exports.BattleAbilities = {
 		num: 4
 	},
 	"cheekpouch": {
+		desc: "Consuming a berry heals this Pokemon for 50% of it's maximum health. Including the effect of the berry",
+		shortDesc: "Consumed berries heal for 50% of max health.",
 		inherit: true,
 		onEatItem: function (item, pokemon) {
 			this.heal(pokemon.maxhp / 2);
 		},
 	},
 	"cloudnine": {
+		desc: "Completely removes weather when this Pokemon is switched in.",
+		shortDesc: "Removes weather upon switch in.",
 		inherit: true,
 		onStart: function(pokemon) {
 			this.setWeather('');
 		}
 	},
 	"colorchange": {
-		desc: "This Pokemon's secondary typing changes to match that of its first move.",
-		shortDesc: "Changes the user's secondary typing to match thats of its first move.",
+		desc: "This Pokemon's secondary typing changes to match that of the move in it's first move slot.",
+		shortDesc: "Changes the user's secondary typing to match thats of it's first move.",
 		onStart: function (pokemon) {
 			var move = this.getMove(pokemon.moveset[0].move);
 			var pTypes = pokemon.types;
@@ -42,8 +46,8 @@ exports.BattleAbilities = {
 		},
 	},
 	"defeatist": {
-		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
-		shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
+		desc: "While this Pokemon has 50% or less of its maximum HP, its Defense and Special Defense are halved.",
+		shortDesc: "While this Pokemon has 50% or less of its max HP, its Defense and Sp. Def are halved.",
 		onModifyDefPriority: 5,
 		onModifyDef: function (def, pokemon) {
 			if (pokemon.hp < pokemon.maxhp / 2) {
@@ -65,6 +69,8 @@ exports.BattleAbilities = {
 		num: 129
 	},
 	"drought": {
+		desc: "Summons the Sun when this Pokemon is switched in permanently.",
+		shortDesc: "Summons permanent Sun upon switch in.",
 		inherit: true,
 		onStart: function(source) {
 			this.setWeather('sunnyday');
@@ -72,6 +78,8 @@ exports.BattleAbilities = {
 		},
 	},
 	"drizzle": {
+		desc: "Summons the Rain when this Pokemon is switched in permanently.",
+		shortDesc: "Summons permanent Rain upon switch in.",
 		inherit: true,
 		onStart: function(source) {
 			this.setWeather('raindance');
@@ -79,6 +87,8 @@ exports.BattleAbilities = {
 		},
 	},
 	"snowwarning": {
+		desc: "Summons Hail when this Pokemon is switched in permanently.",
+		shortDesc: "Summons permanent Hun upon switch in.",
 		inherit: true,
 		onStart: function(source) {
 			this.setWeather('hail');
@@ -86,6 +96,8 @@ exports.BattleAbilities = {
 		},
 	},
 	"sandstream": {
+		desc: "Summons the Sand when this Pokemon is switched in permanently.",
+		shortDesc: "Summons permanent Sand upon switch in.",
 		inherit: true,
 		onStart: function(source) {
 			this.setWeather('sandstorm');
@@ -93,8 +105,8 @@ exports.BattleAbilities = {
 		},
 	},
 	"flowergift": {
-		desc: "When Cherrim enters the battle, it will enter Sunshine Forme.. This ability only works on Cherrim, even if it is copied by Role Play, Entrainment, or swapped with Skill Swap.",
-		shortDesc: "If this Pokemon is Cherrim, it changes to Sunshine Forme.",
+		desc: "When Cherrim enters the battle, it will enter Sunshine Forme.. This ability only works on Cherrim.",
+		shortDesc: "If this Pokemon is Cherrim, it changes to Sunshine Forme upon entering battle.",
 		onStart: function(pokemon) {
 			if (pokemon.template.speciesid==='cherrim' && pokemon.formeChange('Cherrim-Sunshine')) {
 				pokemon.transformed = false;
@@ -126,7 +138,8 @@ exports.BattleAbilities = {
 		num: 108
 	},
 	"grasspelt": {
-		shortDesc: "If Grassy Terrain is active, this Pokemon's Defense and Special Defense are multiplied by 1.5.",
+		desc: "If Grassy Terrain is active, this Pokemon's Defense and Special Defense are multiplied by 1.5."
+		shortDesc: "Grants x1.5 defense and x1.5 special defense in Grassy Terrain.",
 		onModifyDefPriority: 6,
 		onModifyDef: function (pokemon) {
 			if (this.isTerrain('grassyterrain')) return this.chainModify(1.5);
@@ -154,8 +167,8 @@ exports.BattleAbilities = {
 		num: 131
 	},
 	"leafguard": {
-		desc: "If this Pokemon is active while Sunny Day is in effect, it cannot become poisoned, burned, paralyzed or put to sleep (other than user-induced Rest). Leaf Guard does not heal status effects that existed before Sunny Day came into effect.",
-		shortDesc: "If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.",
+		desc: "If Sunny Day is active all damage taken by this Pokemon is reduced by 33%.",
+		shortDesc: "If Sunny Day is active, takes 33% reduced damage",
 		onSourceBasePower: function(basePower, attacker, defender, move) {
 			if (this.isWeather('sunnyday')) {
 				this.debug('Leaf Guard weaken');
@@ -168,7 +181,7 @@ exports.BattleAbilities = {
 		num: 102
 	},
 	"overcoat": {
-		shortDesc: "This Pokemon is immune to powder moves and damage from Sandstorm or Hail.",
+		shortDesc: "This Pokemon is immune to weather effects.",
 		onImmunity: function (type, pokemon) {
 			if (type === 'sandstorm' || type === 'hail' || type === 'powder' || type === 'sunnyday' || type === 'raindance') return false;
 		},
@@ -194,8 +207,8 @@ exports.BattleAbilities = {
 		num: 53
 	},
 	"parentalbond": {
-		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage halved. Does not affect multi-hit moves or moves that have multiple targets.",
-		shortDesc: "This Pokemon's damaging moves hit twice. The second hit has its damage halved.",
+		desc: "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit does 0.3x damage. Does not affect multi-hit moves or moves that have multiple targets.",
+		shortDesc: "This Pokemon's damaging moves hit twice. The second hit does 0.3x damage.",
 		onModifyMove: function (move, pokemon, target) {
 			if (move.category !== 'Status' && !move.selfdestruct && !move.multihit && !move.poweruppunch && ((target.side && target.side.active.length < 2) || move.target in {any:1, normal:1, randomNormal:1})) {
 				move.multihit = 2;
@@ -219,7 +232,8 @@ exports.BattleAbilities = {
 		num: 184
 	},
 	"runaway": {
-		shortDesc: "No competitive use.",
+		desc: "This Pokemon is immune to any form of trapping. Shadow Tag, Arena Trap, Infestation, Clamp etc...",
+		shortDesc: "This Pokemon is immune to trapping.",
 		id: "runaway",
 		name: "Run Away",
 		onModifyPokemonPriority: -10,
@@ -230,7 +244,8 @@ exports.BattleAbilities = {
 		num: 50
 	},
 		"swiftswim": {
-		shortDesc: "If Rain Dance is active, this Pokemon's Speed is raised by 50%.",
+		desc: "If Rain is active, this Pokemon's Speed is increased by 50%.",
+		shortDesc: "This Pokemon's speed is increased in Rain.",
 		onModifySpe: function (speMod, pokemon) {
 			if (this.isWeather(['raindance', 'primordialsea'])) {
 				return this.chain(speMod, 1.5);
@@ -247,8 +262,8 @@ exports.BattleAbilities = {
 		num: 33
 	},
 	"sandrush": {
-		desc: "If Sandstorm is active, this Pokemon's Speed is doubled. This Pokemon takes no damage from Sandstorm.",
-		shortDesc: "If Sandstorm is active, this Pokemon's Speed is doubled; immunity to Sandstorm.",
+		desc: "If Sandstorm is active, this Pokemon's Speed is increased by 50%. This Pokemon takes no damage from Sandstorm.",
+		shortDesc: "If Sandstorm is active, this Pokemon's Speed is increased by 50%; immunity to Sandstorm.",
 		onModifySpe: function (speMod, pokemon) {
 			if (this.isWeather('sandstorm')) {
 				return this.chain(speMod, 1.5);
@@ -263,7 +278,8 @@ exports.BattleAbilities = {
 		num: 146
 	},
 	"chlorophyll": {
-		shortDesc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
+		desc: "If Sunny Day is active, this Pokemon's Speed is increased by 50%.",
+		shortDesc: "If Sunny DAy is active, this Pokemon's Speed is increased by 50%.",
 		onModifySpe: function (speMod) {
 			if (this.isWeather(['sunnyday', 'desolateland'])) {
 				return this.chain(speMod, 1.5);
@@ -280,8 +296,8 @@ exports.BattleAbilities = {
 		num: 34
 	},
 	"tempochange": {
-		desc: "When Meloetta enters the battle, it will turn into its Zen Mode. This ability only works on Meloetta, even if it is copied by Role Play, Entrainment, or swapped with Skill Swap.",
-		shortDesc: "If this Pokemon is Meloetta, it changes to its Pirouette Forme.",
+		desc: "When Meloetta enters the battle, it will transform into Pirouette Form. This ability only works on Meloetta.",
+		shortDesc: "Transforms into Pirouette Form upon switch in.",
 		onStart: function(pokemon) {
 			if (pokemon.template.speciesid==='meloetta' && pokemon.formeChange('Meloetta-Pirouette')) {
 				pokemon.transformed = false;
