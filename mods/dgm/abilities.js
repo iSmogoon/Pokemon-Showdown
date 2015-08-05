@@ -1,7 +1,7 @@
 exports.BattleAbilities = {
 	"battlearmor": {
-		desc: "Not very effective hits do two thirds damage to this pokemon.",
-		shortDesc: "Resisted hits do 2/3 damage to this pokemon.",
+		desc: "Not very effective hits do 33% less damage to this pokemon.",
+		shortDesc: "Resisted hits do 33% less damage to this pokemon.",
 		onSourceBasePower: function(basePower, attacker, defender, move) {
 			if (this.getEffectiveness(move.type, defender) < 0) {
 				this.debug('Battle Armor Weaken');
