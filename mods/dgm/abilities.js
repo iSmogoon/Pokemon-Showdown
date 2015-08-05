@@ -180,6 +180,14 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: 102
 	},
+	"mummy": {
+		inherit: true,
+		onResidual: function(pokemon) {
+			if (!pokemon.hasType('Ghost')) {
+				this.damage(pokemon.maxhp/16);
+			}
+		}
+	},
 	"overcoat": {
 		shortDesc: "This Pokemon is immune to weather effects.",
 		onImmunity: function (type, pokemon) {
@@ -332,14 +340,14 @@ exports.BattleAbilities = {
 	},
 	"persistent": {
 		inherit: true,
-		isNonStandard: false,
+		isNonstandard: false,
 	},
 	"rebound": {
 		inherit: true,
-		isNonStandard: false,
+		isNonstandard: false,
 	},
 	"mountaineer": {
 		inherit: true,
-		isNonStandard: false,
+		isNonstandard: false,
 	},
 };

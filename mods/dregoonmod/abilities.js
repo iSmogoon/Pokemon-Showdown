@@ -350,7 +350,7 @@ exports.BattleAbilities = {
 	},
 	"colorchange": {
 		desc: "This Pokemon's secondary typing changes to match that of its first move.",
-		shortDesc: "Changes the user's secondary typing to match thats of its first move."
+		shortDesc: "Changes the user's secondary typing to match thats of its first move.",
 		onStart: function (pokemon) {
 			var move = this.getMove(pokemon.moveset[0].move);
 			var pTypes = pokemon.types;

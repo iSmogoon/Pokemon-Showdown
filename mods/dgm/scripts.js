@@ -25,6 +25,7 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'heracross').learnset.heatcrash = ["6L0"];
 		this.modData('Learnsets', 'klefki').learnset.drainingkiss = ["6L0"];
 		this.modData('Learnsets', 'pinsir').learnset.fellstinger = ["6L0"];
+		this.modData('Learnsets', 'pinsir').learnset.quickattack = ["6L0"];
 		this.modData('Learnsets', 'serperior').learnset.dracometeor = ["6L0"];
 		this.modData('Learnsets', 'serperior').learnset.dragonbreath = ["6L0"];
 		this.modData('Learnsets', 'serperior').learnset.dragonrush = ["6L0"];
@@ -160,6 +161,8 @@ exports.BattleScripts = {
 
 		this.modData('Learnsets', 'mismagius').learnset.moonblast = ["6L0"];
 		this.modData('Learnsets', 'mismagius').learnset.moonlight = ["6L0"];
+		
+		this.modData('Learnsets', 'gigalith').learnset.headsmash = ["6L0"];
 
 		this.modData('Learnsets', 'mrmime').learnset.drainingkiss = ["6L0"];
 

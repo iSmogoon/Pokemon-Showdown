@@ -672,10 +672,6 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		pinsir: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		primeape: {
                 inherit: true,
                 tier: "Unreleased"

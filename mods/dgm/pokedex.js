@@ -270,7 +270,7 @@ exports.BattlePokedex = {
 	delphox: {
 		inherit: true,
 		baseStats:{hp:80,atk:59,def:70,spa:115,spd:104,spe:106},
-		abilities:{0:"Sheer Force"}	
+		abilities:{0:"Blaze",H:"Soundproof"}	
 	},
 	druddigon: {
 		inherit: true,
@@ -291,12 +291,12 @@ exports.BattlePokedex = {
 	meloetta: {
 		inherit: true,
 		abilities:{0:"Serene Grace",H:"Tempo Change"},
-		baseStats:{hp:95,atk:77,def:87,spa:118,spd:128,spe:95}
 	},
 	meloettapirouette: {
 		inherit: true,
 		abilities:{0:"Serene Grace",H:"Tempo Change"},
-		baseStats:{hp:95,atk:118,def:95,spa:77,spd:77,spe:128}
+		abilities:{0:"Serene Grace",H:"Tempo Change"},
+		abilities:{0:"Serene Grace",H:"Tempo Change"},
 	},
 	rotommow: {
 		inherit: true,
@@ -336,13 +336,13 @@ exports.BattlePokedex = {
 	audino: {
 		inherit: true,
 		types:["Normal","Fairy"],
-		baseStats:{hp:110,atk:60,def:90,spa:60,spd:90,spe:50},
+		baseStats:{hp:110,atk:60,def:86,spa:60,spd:86,spe:50},
 		abilities:{0:"Healer",1:"Regenerator",H:"Serene Grace"}
 	},
 	audinomega: {
 		inherit: true,
 		types:["Normal","Fairy"],
-		baseStats:{hp:110,atk:65,def:130,spa:80,spd:130,spe:45},
+		baseStats:{hp:110,atk:65,def:126,spa:80,spd:126,spe:45},
 		abilities:{0:"Healer"}
 	},
 	articuno: {
