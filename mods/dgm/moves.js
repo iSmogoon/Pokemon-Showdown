@@ -303,7 +303,7 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Flying"
 	},
-	stealthrock: {
+	"stealthrock": {
         	inherit: true,
         	effect: {
             // this is a side condition
