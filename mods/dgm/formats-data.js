@@ -158,10 +158,6 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		serperior: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		skarmory: {
                 inherit: true,
                 tier: "Unreleased"
@@ -198,23 +194,7 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		hawlucha: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		heracross: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		klefki: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		medicham: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		pinsir: {
                 inherit: true,
                 tier: "Unreleased"
         },
@@ -223,10 +203,6 @@ exports.BattleFormatsData = {
                 tier: "Unreleased"
         },
 		smeargle: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		staraptor: {
                 inherit: true,
                 tier: "Unreleased"
         },
@@ -266,15 +242,7 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		ampharos: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		arcanine: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		azelf: {
                 inherit: true,
                 tier: "Unreleased"
         },
@@ -347,10 +315,6 @@ exports.BattleFormatsData = {
                 tier: "Unreleased"
         },
 		gligar: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		goodra: {
                 inherit: true,
                 tier: "Unreleased"
         },
@@ -476,15 +440,7 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		noivern: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		pangoro: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		yanmega: {
                 inherit: true,
                 tier: "Unreleased"
         },
@@ -521,10 +477,6 @@ exports.BattleFormatsData = {
                 tier: "Unreleased"
         },
 		drapion: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		delphox: {
                 inherit: true,
                 tier: "Unreleased"
         },
@@ -708,10 +660,6 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		liepard: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		ludicolo: {
                 inherit: true,
                 tier: "Unreleased"
@@ -721,10 +669,6 @@ exports.BattleFormatsData = {
                 tier: "Unreleased"
         },
 		mantine: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		mesprit: {
                 inherit: true,
                 tier: "Unreleased"
         },
@@ -765,10 +709,6 @@ exports.BattleFormatsData = {
                 tier: "Unreleased"
         },
 		tauros: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		uxie: {
                 inherit: true,
                 tier: "Unreleased"
         },
@@ -828,18 +768,10 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		carbink: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		carnivine: {
                 inherit: true,
                 tier: "Unreleased"
         },
-		castform: {
-			inherit: true,
-			tier: "Unreleased"
-		},
 		chatot: {
                 inherit: true,
                 tier: "Unreleased"
