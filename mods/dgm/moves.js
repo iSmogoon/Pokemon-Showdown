@@ -319,7 +319,7 @@ exports.BattleMovedex = {
 	},
 	"twister": {
 		num: 239,
-		accuracy: 100,
+		accuracy: 10,
 		basePower: 20,
 		category: "Special",
 		desc: "Removes weather upon hit.",
