@@ -29,6 +29,7 @@ exports.BattleItems = {
 			if (pokemon.template.species === 'Shuckle') {
 				return spd * 1.5;
 			}
+		},
 		onSwitchInPriority: -6,
 		onSwitchIn: function (pokemon) {
 			if (pokemon.isActive && pokemon.baseTemplate.species === 'Meloetta') {
@@ -43,11 +44,9 @@ exports.BattleItems = {
 			}
 		},
 		onTakeItem: function (item, source) {
-			if (source.baseTemplate.baseSpecies === 'Castform') return false;
+			if (source.baseTemplate.baseSpecies === 'Meloetta') return false;
 			return true;
-		}
 		},
-
 		num: 225,
 		gen: 3,
 		desc: "If holder is a Latias or a Latios, its Sp. Atk and Sp. Def are 1.5x."
