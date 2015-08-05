@@ -330,11 +330,11 @@ exports.BattleMovedex = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onHit: function (source) {
-			this.setWeather('sunnyday');
+			this.setWeather('');
 			this.weatherData.duration = 0;
 		},
 		target: "normal",
-		type: "Dragon"
+		type: "Flying"
 	},
 	"hyperspacehole": {
 		inherit: true,
