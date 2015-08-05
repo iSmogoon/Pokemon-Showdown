@@ -317,6 +317,25 @@ exports.BattleMovedex = {
 		basePower: 25,
 		accuracy: 95,
 	},
+	"twister": {
+		num: 239,
+		accuracy: 100,
+		basePower: 20,
+		category: "Special",
+		desc: "Removes weather upon hit.",
+		shortDesc: "Removes weather.",
+		id: "twister",
+		name: "Twister",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onHit: function (source) {
+			this.setWeather('sunnyday');
+			this.weatherData.duration = 0;
+		},
+		target: "normal",
+		type: "Dragon"
+	},
 	"hyperspacehole": {
 		inherit: true,
 		basePower: 95,
