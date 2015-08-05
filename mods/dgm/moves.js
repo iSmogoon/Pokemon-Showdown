@@ -1,23 +1,6 @@
 exports.BattleMovedex = {
 	"darkvoid": {
-		num: 464,
-		accuracy: 95,
-		basePower: 60,
-		category: "Special",
-		desc: "50% chance to sleep the target.",
-		shortDesc: "50% chance to cause sleep.",
-		id: "darkvoid",
-		isViable: true,
-		name: "Dark Void",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		secondary: {
-			chance: 50,
-			status: 'slp'
-		},
-		target: "normal",
-		type: "Dark"
+		inherit: true,
 	},
 	//take this out, change was reverted
 	"dizzypunch": {
@@ -34,7 +17,7 @@ exports.BattleMovedex = {
 	"flameburst": {
 		num: 481,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 80,
 		category: "Special",
 		desc: "If this move is successful, each ally adjacent to the target loses 1/16 of its maximum HP, rounded down, unless it has the Ability Magic Guard.",
 		shortDesc: "Damages Pokemon next to the target as well.",
@@ -50,13 +33,10 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Fire"
 	},
-	//80bp in new update
-	"irontail": {
+	"hyperspacehole": {
 		inherit: true,
-		basePower: 100,
-		accuracy: 90,
+		basePower: 95,
 	},
-	//reverted
 "kingsshield": {
 		num: 588,
 		accuracy: true,
@@ -144,7 +124,7 @@ exports.BattleMovedex = {
 	"megakick": {
 		inherit: true,
 		accuracy: 95,
-		basePower: 65,
+		basePower: 85,
 		onBasePower: function (power, user) {
 			if (user.template.id === 'hitmonlee') return this.chainModify(1.5);
 		},
@@ -153,7 +133,7 @@ exports.BattleMovedex = {
 	"megapunch": {
 		inherit: true,
 		accuracy: 95,
-		basePower: 65,
+		basePower: 85,
 		onBasePower: function (power, user) {
 			if (user.template.id === 'hitmonchan') return this.chainModify(1.5);
 		},
@@ -218,13 +198,13 @@ exports.BattleMovedex = {
 	},
 	"paraboliccharge": {
 		inherit: true,
-		basePower: 80,
+		basePower: 75,
 		drain: [3, 4]
 	},
 	"phantomforce": {
 		num: 566,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 95,
 		category: "Physical",
 		desc: "If this move is successful, it breaks through the target's Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
 		shortDesc: "Disappears turn 1. Hits turn 2. Breaks protection.",
@@ -301,6 +281,14 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Flying"
 	},
+	snore: {
+		inherit: true,
+		onBasePower: function (basePower, pokemon) {
+			if (pokemon.status && pokemon.status === 'slp') {
+				return this.chainModify(2);
+			}
+		},
+	},
 	"stealthrock": {
         	inherit: true,
         	effect: {
@@ -332,12 +320,6 @@ exports.BattleMovedex = {
 		flags: {protect: 1, mirror: 1},
 		priority: 1,
 	},
-	"triplekick:": {
-		inherit: true,
-		basePower: 25,
-		accuracy: 95,
-	},
-	//take this out, change was reverted
 	"twister": {
 		num: 239,
 		accuracy: 10,
@@ -357,10 +339,6 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Flying"
 	},
-	"hyperspacehole": {
-		inherit: true,
-		basePower: 95,
-	},
 	"lightofruin": {
 		inherit: true,
 		isUnreleased: false,
@@ -377,8 +355,8 @@ exports.BattleMovedex = {
 		inherit: true,
 		isUnreleased: false,
 	},
-/*
-Update v1.6.0
+
+//Update v1.6.0
 	"grassyterrain": {
 		inherit: true,
 		priority: 1,
@@ -397,8 +375,8 @@ Update v1.6.0
 		basePower: 0,
 		category: "Status",
 		desc: "Raises the user's Special Attack and Accuracy by 1 stage.",
-		shortDesc: "Raises the user's Special Attack and Speed by 1.",
-		id: "lunardance",
+		shortDesc: "Raises the user's Special Attack and Accuracy by 1.",
+		id: "lockon",
 		isViable: true,
 		name: "Lock-On",
 		pp: 10,
@@ -413,5 +391,5 @@ Update v1.6.0
 		type: "Psychic"
 	},
 	
-*/
+
 };

@@ -190,7 +190,7 @@ exports.BattleAbilities = {
 		rating: 2.5,
 		num: 142
 	},
-		"pickup": {
+	"pickup": {
 		desc: "Removes hazards on switch-in.",
         shortDesc: "Removes hazards on switch-in.",
 		onStart: function(pokemon) {
@@ -220,7 +220,7 @@ exports.BattleAbilities = {
 			onBasePowerPriority: 8,
 			onBasePower: function (basePower) {
 				if (this.effectData.hit) {
-					return this.chainModify(0.3);
+					return this.chainModify(0.2);
 				} else {
 					this.effectData.hit = true;
 				}
@@ -295,6 +295,7 @@ exports.BattleAbilities = {
 		rating: 2.5,
 		num: 34
 	},
+	/*
 	"tempochange": {
 		desc: "When Meloetta enters the battle, it will transform into Pirouette Form. This ability only works on Meloetta.",
 		shortDesc: "Transforms into Pirouette Form upon switch in.",
@@ -304,7 +305,7 @@ exports.BattleAbilities = {
 				this.add('-formechange', pokemon, 'Meloetta-Pirouette');
 				this.add('-message', 'Meloetta transformed!');
 			} else {
-				return false;
+				return false; //removed in recent update
 			}
 		},
 		id: "Tempo Change",
@@ -312,6 +313,7 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: -5
 	},
+	*/
 	"persistent": {
 		inherit: true,
 		isNonStandard: false,
