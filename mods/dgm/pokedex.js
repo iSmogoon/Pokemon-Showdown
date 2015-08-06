@@ -213,7 +213,6 @@ exports.BattlePokedex = {
 	},
 	noivern: {
 		inherit: true,
-		baseStats:{hp:85,atk:77,def:80,spa:90,spd:80,spe:123},
 		abilities:{0:"Frisk",1:"Infiltrator",H:"Adaptability"}
 	},
 	rotomheat: {
@@ -228,7 +227,7 @@ exports.BattlePokedex = {
 	tentacruel: {
 		inherit: true,
 		baseStats:{hp:80,atk:67,def:80,spa:80,spd:120,spe:100},
-		abilities:[0:"Clear Body",1:"Regenerator",H:"Rain Dish"]
+		abilities:{0:"Clear Body",1:"Regenerator",H:"Rain Dish"}
 	},
 	umbreon: {
 		inherit: true,
@@ -301,8 +300,6 @@ exports.BattlePokedex = {
 	meloettapirouette: {
 		inherit: true,
 		abilities:{0:"Serene Grace",H:"Tempo Change"},
-		abilities:{0:"Serene Grace",H:"Tempo Change"},
-		abilities:{0:"Serene Grace",H:"Tempo Change"},
 	},
 	rotommow: {
 		inherit: true,
@@ -359,6 +356,11 @@ exports.BattlePokedex = {
 		inherit: true,
 		baseStats:{hp:123,atk:70,def:84,spa:95,spd:102,spe:60},
 		abilities:{0:"Refrigerate",1:"Solid Rock",H:"Snow Warning"}
+	},
+	avalugg: {
+		inherit: true,
+		baseStats:{hp:95,atk:117,def:184,spa:24,spd:69,spe:25},
+		abilities:{0:"Filter",1:"Ice Body",H:"Sturdy"}
 	},
 	beautifly: {
 		inherit: true, 

@@ -412,10 +412,6 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		tentacruel: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		toxicroak: {
                 inherit: true,
                 tier: "Unreleased"
@@ -725,10 +721,6 @@ exports.BattleFormatsData = {
                 tier: "Unreleased"
         },
 		armaldo: {
-                inherit: true,
-                tier: "Unreleased"
-        },
-		avalugg: {
                 inherit: true,
                 tier: "Unreleased"
         },

@@ -107,6 +107,7 @@ exports.BattleScripts = {
 		
 		this.modData('Learnsets', 'carbink').learnset.magicroom = ["6L0"];
 		this.modData('Learnsets', 'carbink').learnset.healblock = ["6L0"];
+		this.modData('Learnsets', 'carbink').learnset.healbell = ["6L0"];
 		
 		this.modData('Learnsets', 'castform').learnset.recover = ["6L0"];
 
