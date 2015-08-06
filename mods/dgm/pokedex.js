@@ -214,7 +214,7 @@ exports.BattlePokedex = {
 	noivern: {
 		inherit: true,
 		baseStats:{hp:85,atk:77,def:80,spa:90,spd:80,spe:123},
-		abilities:{0:"Frisk",1:"Infiltrator",H:"Aerilate"}
+		abilities:{0:"Frisk",1:"Infiltrator",H:"Adaptability"}
 	},
 	rotomheat: {
 		inherit: true,
@@ -224,6 +224,11 @@ exports.BattlePokedex = {
 		inherit: true,
 		baseStats:{hp:100,atk:80,def:86,spa:80,spd:79,spe:72},
 		abilities:{0:"Sweet Veil",1:"Cloud Nine",H:"Unburden"}
+	},
+	tentacruel: {
+		inherit: true,
+		baseStats:{hp:80,atk:67,def:80,spa:80,spd:120,spe:100},
+		abilities:[0:"Clear Body",1:"Regenerator",H:"Rain Dish"]
 	},
 	umbreon: {
 		inherit: true,
@@ -266,6 +271,7 @@ exports.BattlePokedex = {
 	},
 	cofagrigus: {
 		inherit: true,
+		baseStats:{hp:64,atk:50,def:145,spa:95,spd:105,spe:30},
 	},
 	delphox: {
 		inherit: true,
@@ -343,7 +349,7 @@ exports.BattlePokedex = {
 		inherit: true,
 		types:["Normal","Fairy"],
 		baseStats:{hp:110,atk:65,def:126,spa:80,spd:126,spe:45},
-		abilities:{0:"Healer"}
+		abilities:{0:"Regenerator"}
 	},
 	articuno: {
 		inherit: true,
@@ -387,6 +393,10 @@ exports.BattlePokedex = {
 		types:["Grass","Fire"],
 		baseStats:{hp:80,atk:91,def:82,spa:101,spd:91,spe:98},
 		abilities:{0:"Flower Gift",H:"Leaf Guard"}
+	},
+	claydol: {
+		inherit: true,
+		baseStats:{hp:80,atk:60,def:105,spa:80,spd:120,spe:75},
 	},
 	cryogonal: {
 		inherit: true,

@@ -114,6 +114,8 @@ exports.BattleScripts = {
 		this.modData('Learnsets', 'cherrim').learnset.fireblast = ["6L0"];
 		this.modData('Learnsets', 'cherrim').learnset.flameburst = ["6L0"];
 		this.modData('Learnsets', 'cherrim').learnset.flareblitz = ["6L0"];
+		
+		this.modData('Learnsets', 'claydol').learnset.recover = ["6L0"];
 
 		this.modData('Learnsets', 'dedenne').learnset.dazzlinggleam = ["6L0"];
 

@@ -596,10 +596,6 @@ exports.BattleFormatsData = {
                 inherit: true,
                 tier: "Unreleased"
         },
-		claydol: {
-                inherit: true,
-                tier: "Unreleased"
-        },
 		combusken: {
                 inherit: true,
                 tier: "Unreleased"
