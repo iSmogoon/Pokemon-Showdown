@@ -174,7 +174,7 @@ exports.BattlePokedex = {
 	},
 	volcanion: {
 		inherit: true,
-		baseStats:{hp:100,atk:110,def:110,spa:130,spd:110,spe:60}
+		baseStats:{hp:100,atk:100,def:110,spa:130,spd:100,spe:60}
 	},
 	abomasnow: {
 		inherit: true,
