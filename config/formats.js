@@ -16,6 +16,14 @@ exports.Formats = [
 		banlist: ['Uber', 'NFE']
 	},
 	{
+		name: "GoonMons",
+		section: "GoonServer Metas",
+		column: 2,
+		mod: 'goonmons',
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
+		banlist: ['Uber', 'NFE', 'unrelgens']
+	},
+	{
 		name: "Middle Cup",
 		desc: ["&bullet; Middle Cup: Only Pokemon that have evolved once and can evolve again are allowed. Max level is 50."],
 		section: "GoonServer Metas",
@@ -25,6 +33,7 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Eviolite Clause', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
 		banlist: ['OU', 'UU', 'Ubers', 'RU', 'NU', 'PU', 'LC', 'Chansey + Eviolite']
 	},
+	/*
 	{
 		name: "LC Inheritance",
 		desc: ["&bullet; LC Inheritance: All Pokemon get the abilities and moves of their evolutions."],
@@ -34,6 +43,7 @@ exports.Formats = [
 		ruleset: ['Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Cancel Mod', 'Little Cup'],
 		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger']
 	},
+	*/
 	{
 		name: "Gods and Followers",
 		section: "GoonServer Metas",
@@ -54,6 +64,7 @@ exports.Formats = [
 			move.priority = (move.priority)+1;
 		},
 	},
+	/*
 	{
 		name: "Base Power Damage",
 		section: "GoonServer Metas",
@@ -65,6 +76,7 @@ exports.Formats = [
 				move.basePower = 0;
 		},
 	},
+	*/
 	{
 		name: "Random Battle",
 		section: "ORAS Singles",
