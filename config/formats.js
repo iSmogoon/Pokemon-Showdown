@@ -46,12 +46,23 @@ exports.Formats = [
 		name: "Prioritymons",
 		section: "GoonServer Metas",
 		column: 2,
-		
+		desc: ["&bullet; Prioritymons: In this metagame, the move in the user's first slot will have 1 additional priority. (ie, Extreme Speed in the first slot has +3 priority instead of +2)"],
 		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		banlist: ['Uber', 'Soul Dew', 'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite'],
 		onModifyMove: function (move, pokemon) {
 			var move = this.getMove(pokemon.moveset[0].move);
 			move.priority = (move.priority)+1;
+		},
+	},
+	{
+		name: "Base Power Damage",
+		section: "GoonServer Metas",
+		column: 2,
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: ['Uber', 'Soul Dew', 'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite'],
+		onModifyMove: function (move, pokemon) {
+				move.damage = move.basePower;
+				move.basePower = 0;
 		},
 	},
 	{
