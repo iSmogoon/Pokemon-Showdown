@@ -427,7 +427,7 @@ exports.BattlePokedex = {
 	gigalith: {
 		inherit: true,
 		baseStats:{hp:85,atk:135,def:130,spa:60,spd:90,spe:25},
-		abilities:{0:"Sturdy",H:"Solid Rock"}
+		abilities:{0:"Sturdy",1:"Rock Head",H:"Sand Force"}
 	},
 	glaceon: {
 		inherit: true,
@@ -515,6 +515,7 @@ exports.BattlePokedex = {
 		baseStats:{hp:80,atk:90,def:75,spa:105,spd:90,spe:100}
 	},
 	pachirisu: {
+		inherit: true,
 		baseStats:{hp:70,atk:45,def:90,spa:45,spd:105,spe:95}
 	},
 	parasect: {

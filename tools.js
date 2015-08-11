@@ -16,7 +16,7 @@ var fs = require('fs');
 module.exports = (function () {
 	var moddedTools = {};
 
-	var dataTypes = ['FormatsData', 'Learnsets', 'Pokedex', 'Movedex', 'Statuses', 'TypeChart', 'Scripts', 'Items', 'Abilities', 'Natures', 'Formats', 'Aliases'];
+	var dataTypes = ['DGMPokedex', 'DGMAbilities', 'DGMFormats-Data', 'DGMItems', 'DGMMoves', 'FormatsData', 'Learnsets', 'Pokedex', 'Movedex', 'Statuses', 'TypeChart', 'Scripts', 'Items', 'Abilities', 'Natures', 'Formats', 'Aliases'];
 	var dataFiles = {
 		'Pokedex': 'pokedex.js',
 		'Movedex': 'moves.js',
@@ -28,7 +28,9 @@ module.exports = (function () {
 		'Formats': 'rulesets.js',
 		'FormatsData': 'formats-data.js',
 		'Learnsets': 'learnsets.js',
-		'Aliases': 'aliases.js'
+		'Aliases': 'aliases.js',
+		'DGMPokedex': 'mods/dgm/pokedex.js',
+		
 	};
 
 	var BattleNatures = dataFiles.Natures = {
