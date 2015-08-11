@@ -33,16 +33,27 @@ exports.Formats = [
 		maxLevel: 5,
 		ruleset: ['Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Cancel Mod', 'Little Cup'],
 		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger']
-		
 	},
-{
-   name: "Gods and Followers",
-   section: "GoonServer Metas",
+	{
+		name: "Gods and Followers",
+		section: "GoonServer Metas",
 
-   mod: 'godsandfollowers',
-   ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Followers Clause', 'Mega Rayquaza Ban Mod', 'Cancel Mod'],
-   banlist: ['Illegal']
-},
+		mod: 'godsandfollowers',
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Followers Clause', 'Mega Rayquaza Ban Mod', 'Cancel Mod'],
+		banlist: ['Illegal']
+	},
+	{
+		name: "Prioritymons",
+		section: "GoonServer Metas",
+		column: 2,
+		
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: ['Uber', 'Soul Dew', 'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite'],
+		onModifyMove: function (move, pokemon) {
+			var move = this.getMove(pokemon.moveset[0].move);
+			move.priority = (move.priority)+1;
+		},
+	},
 	{
 		name: "Random Battle",
 		section: "ORAS Singles",
