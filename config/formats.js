@@ -20,6 +20,7 @@ exports.Formats = [
 		section: "GoonServer Metas",
 		column: 2,
 		mod: 'goonmons',
+		debug: true,
 		ruleset: ['Pokemon', 'GoonDex', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
 		banlist: ['Uber', 'NFE']
 	},
