@@ -20,8 +20,8 @@ exports.Formats = [
 		section: "GoonServer Metas",
 		column: 2,
 		mod: 'goonmons',
-		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
-		banlist: ['Uber', 'NFE', 'unrelgens']
+		ruleset: ['Pokemon', 'GoonDex', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause', 'Sleep Clause'],
+		banlist: ['Uber', 'NFE']
 	},
 	{
 		name: "Middle Cup",
