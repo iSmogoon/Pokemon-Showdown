@@ -17,34 +17,17 @@ exports.BattleAbilities = {
 		num: 85
 	},
 	"oblivious": {
-		inherit: true,
-		onAnyModifyBoost: function (boosts, target) {
-			var source = this.effectData.target;
-			if (source === target) return;
-			if (source === this.activePokemon && target === this.activeTarget) {
-				boosts['def'] = 0;
-				boosts['spd'] = 0;
-				boosts['evasion'] = 0;
-			}
-			if (target === this.activePokemon && source === this.activeTarget) {
-				boosts['atk'] = 0;
-				boosts['spa'] = 0;
-				boosts['accuracy'] = 0;
-			}
-			if (target === this.activePokemon && source === this.activeTarget) {
-				boosts['def'] = 0;
-				boosts['spd'] = 0;
-				boosts['evasion'] = 0;
-			}
-			if (source === this.activePokemon && target === this.activeTarget) {
-				boosts['atk'] = 0;
-				boosts['spa'] = 0;
-				boosts['evasion'] = 0;
+		desc: "This pokemon's stats cannot be lowered.",
+		shortDesc: "This pokemon's stats cannot be lowered.",
+		onBoost: function(boost) {
+			for (var i in boost) {
+				if (boost[i] < 0)
+				boost[i] = 0;
 			}
 		},
 		id: "oblivious",
 		name: "Oblivious",
-		rating: 1,
+		rating: 0.5,
 		num: 12
 	},
 	"rivalry": {
@@ -75,23 +58,5 @@ exports.BattleAbilities = {
 		name: "Wonder Skin",
 		rating: 1,
 		num: 147
-	},
-	"twister": {
-		num: 239,
-		accuracy: 10,
-		basePower: 20,
-		category: "Special",
-		desc: "Removes weather upon hit.",
-		shortDesc: "Removes weather.",
-		id: "twister",
-		name: "Twister",
-		pp: 20,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		onHit: function (source) {
-			this.setWeather('');
-		},
-		target: "normal",
-		type: "Flying"
 	},
 };
