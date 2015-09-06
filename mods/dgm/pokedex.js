@@ -344,7 +344,6 @@ exports.BattlePokedex = {
 	},
 	audinomega: {
 		inherit: true,
-		types:["Normal","Fairy"],
 		baseStats:{hp:110,atk:65,def:126,spa:80,spd:126,spe:45},
 		abilities:{0:"Regenerator"}
 	},
